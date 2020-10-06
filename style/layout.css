@@ -13,6 +13,8 @@ html {
     box-sizing: inherit;
 }
 
+
+/* title */
 .title {
     padding: 20px;
     text-align: center;
@@ -61,4 +63,30 @@ html {
         width: 100%;
         display: block;
     }
+}
+
+/* create button */
+.create > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.create-button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+}
+
+.create-button:hover {
+    background-color: rgb(129, 129, 129);
 }
