@@ -1,6 +1,9 @@
 
 .top-bar {
-    display: flex;
+    display: inline-flex;
+    margin: 10px;
+    position: relative;
+    left: 38%;
 }
 
 .top-bar-left {
@@ -14,27 +17,42 @@
 }
 
 .top-bar-right {
-    flex: 1;
+    margin-top: 15%;
+    position: relative;
+    left: 180%;
 }
 
 .top-bar-right > img {
     width: 30px;
 }
 
+.form-contents {
+    position: relative;
+    left: 40%;
+}
+
 .form-input {
     width: 300px;
     height: 300px;
-    background-color: #dddddd;
+    background-color: #ececec;
     color: #4d4d4d;
     border: none;
     border-radius: 5%;
     font-size: 1.2rem;
 }
 
+.sender {
+   display: inline-flex;
+}
+
 .sender > p {
     font-size: 1.25rem;
     color: #252525;
-    text-align: center;
+    flex: 1;
+}
+
+.sender > .sender-from {
+    width: 100px;
 }
 
 .save-button {
@@ -47,7 +65,7 @@
     background-color: rgb(66, 66, 66);
     text-align: center;
     cursor: pointer;
-    width: 5%;
+    width: 100px;
     height: 50px;
 }
 
