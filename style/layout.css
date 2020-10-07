@@ -16,7 +16,7 @@ html {
 
 /* title */
 .title {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-color: rgba(1, 80, 170, 0.788);
     color: #ffffff;
@@ -32,7 +32,7 @@ html {
 
 .column {
     float: left;
-    width: 33.3%;
+    width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -40,10 +40,6 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
-}
-
-.card > img {
-    width: 100%;
 }
 
 .content {
@@ -58,7 +54,7 @@ html {
     display: table;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .column {
         width: 100%;
         display: block;
@@ -81,12 +77,14 @@ html {
     padding: 8px;
     color: white;
     background-color: rgb(66, 66, 66);
+    font-size: 1.25rem;
+    font-weight: bold;
     text-align: center;
     cursor: pointer;
-    width: 30%;
+    width: 150px;
     height: 50px;
 }
 
 .create-button:hover {
-    background-color: rgb(129, 129, 129);
+    background-color: rgba(1, 80, 170, 0.788);
 }
