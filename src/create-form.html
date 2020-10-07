@@ -12,7 +12,7 @@
         <!--내용 상단바-->
         <div class="top-bar">
             <div class="top-bar-left">
-                <p>Cancel</p>
+                <p onclick="location.href='../index.html'">Cancel</p>
             </div>
             <div class="top-bar-right">
                 <img src="../assets/icon/text.png" alt="text">
@@ -21,16 +21,16 @@
         </div>
         <!--내용-->
         <div class="form-contents">
-            <textarea class="form-input" cols="0" rows="0" placeholder="아무 내용이나 입력하세요."></textarea>
+            <textarea class="form-input" cols="0" rows="0" placeholder="아무 내용이나 입력하세요." autofocus></textarea>
         </div>
         <!--보내는 이-->
         <div class="sender">
             <p class="sender-from">From.</p>
-            <p class="sender-name">테스트네임</p>
+            <input type="text" value placeholder="name" maxlength="10" class="sender-name">
         </div>
         <!--저장 버튼-->
         <div class="save">
-            <button class="save-button">Save</button>
+            <button class="save-button" onclick="#">Save</button>
         </div>
     </div>
 </body>

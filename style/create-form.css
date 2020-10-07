@@ -16,6 +16,11 @@
     color: #252525;
 }
 
+.top-bar-left > p:hover {
+    cursor: pointer;
+    color: rgba(1, 80, 170, 0.788);
+}
+
 .top-bar-right {
     margin-top: 15%;
     position: relative;
@@ -24,6 +29,7 @@
 
 .top-bar-right > img {
     width: 30px;
+    cursor: pointer;
 }
 
 .form-contents {
@@ -56,9 +62,12 @@
     width: 60px;
 }
 
-.sender > .sender-name {
-    width: 150px;
+.sender-name {
+    outline: none;
+    border: 0;
     text-decoration: underline;
+    font-size: 1.2rem;
+    color: #555555;
 }
 
 .save {
@@ -88,17 +97,30 @@
 @media screen and (max-width: 550px) {
     .wrap {
         width: 100%;
-        left: 0%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .top-bar {
+        left: 20%;
     }
 
     .top-bar-right {
-        left: 0%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-        display: block;
+        left: 20%;
         width: 100%;
+    }
+
+    .form-contents {
+        left: 20%;
+    }
+
+    .sender {
+        left: 20%;
+    }
+
+    .save-button {
+        left: 45%;
     }
 
 }
