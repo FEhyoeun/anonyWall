@@ -1,14 +1,19 @@
 const saveBtn = document.querySelector(".save-button");
 
-saveBtn.addEventListener('click', saveContents);
+// 폼 만들기
 
-// 입력 받은 데이터를 저장
-function saveDatas {
-    console.log(body);
-}
 
-// 입력 받은 내용
+
+// 입력받은 데이터를 저장
+ function saveDatas() {
+    saveContents();
+    savaSender();
+ }
+
+// 입력받은 내용
 let inputContents = [];
+
+saveBtn.addEventListener('click', saveContents);
 
 function saveContents() {
     inputContents = document.querySelector(".form-input").value;
@@ -17,8 +22,7 @@ function saveContents() {
     console.log(body);
 }
 
-
-// 입력 받은 이름
+// 입력받은 이름
 let InputSender = [];
 
 saveBtn.addEventListener('click', savaSender);
@@ -29,4 +33,3 @@ function savaSender() {
     const name = localStorage.getItem('saveName');
     console.log(name);
 }
-
