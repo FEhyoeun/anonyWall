@@ -6,7 +6,7 @@ const saveBtn = document.querySelector(".save-button");
 function saveDatas() {
     saveContents();
     savaSender();
-    }
+}
 
 // 입력받은 내용을 저장하기
 let inputContents = [];
@@ -45,16 +45,20 @@ function saveContents() {
     body4.innerText = name;
     body5.innerText = body;
 
-    
-    //const wrap = document.querySelector(".testtest");
-    const row = document.querySelector(".sender");
-    console.log(row);
-    console.log(body1);
-    //console.log(wrap);
-  
+    //const row = document.querySelector(".row");
+    //row.appendChild(name);
+
+    //const name = JSON.parse(localStorage.getItem('saveName'));
 
 }
 
+// body1 밖에 빼내야함!!!!!!
+saveBtn.addEventListener('click', () => {
+    var divElement = document.getElementById('iframeId');
+    var element = divElement.contentWindow.document.querySelector('.row');
+    element.appendChild(body1);
+    console.log(element);
+});
 
 
 //saveBtn.addEventListener('click', savaSender);
@@ -84,10 +88,11 @@ function savaSender() {
 
     name5.innerText = name;
 
-    const row = document.querySelector(".row");
+    //const row = document.querySelector(".row");
     //row.appendChild(name);
     //console.log(name1);
 
 }
 
 saveBtn.addEventListener('click', saveDatas);
+//saveBtn.addEventListener('submit', saveDatas);
