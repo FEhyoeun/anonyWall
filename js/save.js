@@ -2,7 +2,6 @@
 
 const saveBtn = document.querySelector(".save-button");
 
-
 // 입력받은 데이터를 저장
 function saveDatas() {
     saveContents();
@@ -11,6 +10,8 @@ function saveDatas() {
 
 // 입력받은 내용을 저장하기
 let inputContents = [];
+// 입력받은 이름을 저장하기
+let InputSender = [];
 
 //saveBtn.addEventListener('click', saveContents);
 function saveContents() {
@@ -44,15 +45,17 @@ function saveContents() {
     body4.innerText = name;
     body5.innerText = body;
 
-    const row = document.querySelector(".row");
-    console.log(body1);
-    //row.appendChild(body1);
     
+    //const wrap = document.querySelector(".testtest");
+    const row = document.querySelector(".sender");
+    console.log(row);
+    console.log(body1);
+    //console.log(wrap);
+  
 
 }
 
-// 입력받은 이름을 저장하기
-let InputSender = [];
+
 
 //saveBtn.addEventListener('click', savaSender);
 function savaSender() {
@@ -86,7 +89,5 @@ function savaSender() {
     //console.log(name1);
 
 }
-
-
 
 saveBtn.addEventListener('click', saveDatas);
